@@ -19,3 +19,17 @@ def letter_grade(score):
     if score >= PASSING:
         return "D"
     return "F"
+
+
+def median(scores):
+    """Return the middle score of a sorted list."""
+    ordered = sorted(scores)
+    mid = len(ordered) // 2
+    if len(ordered) % 2:
+        return ordered[mid]
+    return (ordered[mid - 1] + ordered[mid]) / 2
+
+
+def score_range(scores):
+    """Return (lowest, highest) score."""
+    return min(scores), max(scores)
