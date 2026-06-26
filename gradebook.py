@@ -3,6 +3,9 @@
 PASSING = 60
 
 
+def mysum(scores):
+    return sum(scores)
+
 def average(scores):
     """Return the mean of a list of scores."""
     return sum(scores) / len(scores)
