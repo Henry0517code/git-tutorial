@@ -45,3 +45,9 @@ def mode(scores):
 def score_range(scores):
     """Return (lowest, highest) score."""
     return min(scores), max(scores)
+
+
+def pass_rate(scores):
+    """Fraction of scores at or above PASSING."""
+    passed = [s for s in scores if s >= PASSING]
+    return len(passed) / len(scores)
