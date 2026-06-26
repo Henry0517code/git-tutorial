@@ -1,6 +1,6 @@
 """ClassMetrics - a tiny gradebook tool."""
 
-PASSING = 75
+PASSING = 80
 
 
 def mysum(scores):
