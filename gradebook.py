@@ -30,6 +30,15 @@ def median(scores):
     return (ordered[mid - 1] + ordered[mid]) / 2
 
 
+def mode(scores):
+    """[60, 60, 70] -> 60"""
+    count = {}
+    for s in scores:
+        if s not in count:
+            count[s] = 0
+        count[s] += 1
+
+
 def score_range(scores):
     """Return (lowest, highest) score."""
     return min(scores), max(scores)
